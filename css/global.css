@@ -42,27 +42,28 @@ body{min-width: 1024px;}
 
 /* details */
 .details .main{height:412px;padding:0 12px;text-align: center;}
-.details .main .big ul li{}
 .details .small{height:130px;}
-.details .container .main .big{width:563px;height:412px;position: relative;overflow: hidden;display: inline-block;vertical-align: middle;}
-.details .container .main .txt{display: inline-block;vertical-align: middle;}
-.details .container .main .big ul{width:2132px;height:412px;position: absolute;top:0;left:0;}
+.details .container .main .big{width:563px;height:412px;position: relative;overflow:hidden;display: inline-block;vertical-align: middle;}
+.details .container .main .txt{display: inline-block;vertical-align: middle;position: relative;}
+.details .container .main .txt a{position: absolute;width:100%;display: block;height:60px;cursor: pointer;bottom:110px;left:0;}
+.details .container .main .big ul{width:2252px;height:412px;position: absolute;top:0;left:0;}
 .details .container .main .big ul li{width:563px;height:412px;}
 .details .container .main .big ul li img{width:563px;height:412px;}
-.details .small{height:130px;padding-left:40px;padding-top:20px;}
-.details .small li{width:130px;height:130px;padding-right:40px;cursor: pointer;opacity: 0.6;}
+.details .small{height:130px;padding-top:20px;text-align: center;}
+.details .small li{width:130px;height:130px;padding-right:40px;cursor: pointer;opacity: 0.6;display: inline-block;}
 /* .details .small li:hover{opacity: 1;} */
 .details .small li img{width:130px;height:130px;}
 
 /* tables */
 #tables{background:url('../images/table_bg.jpg') no-repeat center;background-size: cover;text-align: center;}
+#tables h3{font-weight: normal;font-size: 14px;width:900px;margin:0 auto;line-height: 2em;text-align: justify;color:#fff;letter-spacing: 2px;padding-bottom: 8px;}
 #tables table{border:1px solid #fff;border-collapse: collapse;color:#fff;width:900px;margin:0 auto 20px;}
 #tables table tr{height:46px;}
 #tables table td{border:1px solid #fff;width:300px;font-size:16px;}
 #tables table td.h1{font-size: 24px;font-weight: bold;}
 #tables table td.h2{font-size: 22px;font-weight: bold;}
 #tables p{text-align: justify;font-size:14px;color:#fff;width:900px;margin:0 auto;line-height: 2em;letter-spacing: 2px;}
-#tables span{display: block;text-align: justify;font-size: 12px;color:#750000;width:900px;margin:0 auto;letter-spacing: 2px;line-height: 2em;}
+#tables span{display: block;text-align: justify;font-size: 12px;color:#FD4343;width:900px;margin:0 auto;letter-spacing: 2px;line-height: 2em;}
 
 /* fixed */
 #fixed{text-align: center;}

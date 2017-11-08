@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>交易1赠1，礼尚多往来。定制期货人的双十一</title>
+  <meta name="description" content="交易1手送1手，this time 我们淘的是多空点位，给的是发财更多机会！不疯不抢不剁手，iPhone X 大礼等你拿！">
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/jquery.fullPage.css">
   <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
@@ -15,6 +16,7 @@
     $(function(){
       $('#fullpage').fullpage({
         // verticalCentered:false,
+        anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
         afterLoad: function(anchorLink, index){
        
         if(index == 1){
@@ -23,7 +25,7 @@
         }
         if(index == 2){
           $('#fixed').hide();
-          $("#phone").hide();
+          $("#phone").show();
         }
         if(index == 3){
           $('#fixed').hide();
@@ -49,6 +51,12 @@
 <body style="overflow:scroll;">
   <div id="fullpage">
     <div class="section" id="header">
+      <!-- <div class="time">
+        <div class="con">
+          <h2>活动时间：2017.11.11～2017.12.10</h2>
+          <p>交易1手送1手：例如孙先生活动期间，实际交易恒指240手，那么参加双11活动后，则算为480手。当参加活动手数满足兑换规则，即可轻松兑换双11礼品。</p>
+        </div>
+      </div> -->
     </div>
     <!-- 总览 -->
     <div class="section prize" id="pandect">
@@ -70,26 +78,20 @@
     </div>
     <div class="section prize details">
       <div class="container">
-        <div class="main clear">
-          <div class="big">
-            <ul classs="clear">
-              <li class='fl'><img src="./images/prize1/big1.png" alt=""></li>
-              <li class='fl'><img src="./images/prize1/big2.png" alt=""></li>
-              <li class='fl'><img src="./images/prize1/big3.png" alt=""></li>
-              <li class='fl'><img src="./images/prize1/big4.png" alt=""></li>
-            </ul>
-          </div>
-          <div class="txt">
-            <img src="./images/prize1/txt.png" alt="">
-
-          </div>
+        <div class="big">
+          <ul classs="clear">
+            <li class='fl'><img src="./images/prize1/big1.png" alt=""></li>
+            <li class='fl'><img src="./images/prize1/big2.png" alt=""></li>
+            <li class='fl'><img src="./images/prize1/big3.png" alt=""></li>
+            <li class='fl'><img src="./images/prize1/big4.png" alt=""></li>
+          </ul>
         </div>
-        <ul class="option clear small">
-          <li class='fl'><img src="./images/prize1/small1.png" alt=""></li>
-          <li class='fl'><img src="./images/prize1/small2.png" alt=""></li>
-          <li class='fl'><img src="./images/prize1/small3.png" alt=""></li>
-          <li class='fl'><img src="./images/prize1/small4.png" alt=""></li>
-        </ul>
+        <div class="txt">
+          <img src="./images/prize1/txt.png" alt="">
+          <a href="#page6"></a>
+
+        </div>
+        
       </div>
       
     </div>
@@ -106,15 +108,10 @@
           </div>
           <div class="txt">
             <img src="./images/prize2/txt.png" alt="">
-
+            <a href="#page6"></a>
           </div>
         </div>
-        <ul class="option clear small">
-            <li class='fl'><img src="./images/prize2/small1.png" alt=""></li>
-            <li class='fl'><img src="./images/prize2/small2.png" alt=""></li>
-            <li class='fl'><img src="./images/prize2/small3.png" alt=""></li>
-            <li class='fl'><img src="./images/prize2/small4.png" alt=""></li>
-        </ul>
+        
       </div>
     </div>
     <div class="section prize details">
@@ -130,47 +127,44 @@
           </div>
           <div class="txt">
             <img src="./images/prize3/txt.png" alt="">
-
+            <a href="#page6"></a>
           </div>
         </div>
-        <ul class="option clear small">
-            <li class='fl'><img src="./images/prize3/small1.png" alt=""></li>
-            <li class='fl'><img src="./images/prize3/small2.png" alt=""></li>
-            <li class='fl'><img src="./images/prize3/small3.png" alt=""></li>
-            <li class='fl'><img src="./images/prize3/small4.png" alt=""></li>
-        </ul>
+        
       </div>
     </div>
     <div class="section" id="tables">
       <div class="container">
         <img src="./images/table_title.png" alt="" class='table_title'>
+        <!-- <img src="./images/table.png" alt="" class="table"> -->
+        <h3>交易1手送1手：例如孙先生活动期间，实际交易恒指240手，那么参加双11活动后，则算为480手。当参加活动手数满足兑换规则，即可轻松兑换双11礼品。</h3>
         <table>
-          <tr>
-            <td rowspan="2" class="h1">奖品</td>
-            <td colspan="2" class="h2">对应手数</td>
-          </tr>
-          <tr>
-            <td>恒指&nbsp;原油&nbsp;股指</td>
-            <td>螺纹钢</td>
-          </tr>
-          <tr>
-            <td>膳魔师保温杯</td>
-            <td>满130手送</td>
-            <td>满130手送</td>
-          </tr>
-          <tr>
-            <td>戴森吸尘器</td>
-            <td>满2000手送</td>
-            <td>满20000手送</td>
-          </tr>
-          <tr>
-            <td>iPhone X</td>
-            <td>满4800手送</td>
-            <td>满48000手送</td>
-          </tr>   
-
-        </table>
-        <p>1、活动时间：2017年10月1日-2017年11月5日</p>
+            <tr>
+              <td rowspan="2" class="h1">奖品</td>
+              <td colspan="2" class="h2">对应手数</td>
+            </tr>
+            <tr>
+              <td>恒指&nbsp;原油&nbsp;股指</td>
+              <td>螺纹钢</td>
+            </tr>
+            <tr>
+              <td>膳魔师保温杯</td>
+              <td>满130手送</td>
+              <td>满1300手送</td>
+            </tr>
+            <tr>
+              <td>戴森吸尘器</td>
+              <td>满2000手送</td>
+              <td>满20000手送</td>
+            </tr>
+            <tr>
+              <td>iPhone X</td>
+              <td>满4800手送</td>
+              <td>满48000手送</td>
+            </tr>   
+  
+          </table>
+        <p>1、活动时间：2017年11月11日-2017年12月10日</p>
         <p>2、活动对象：新老客户都可参加</p>
         <p>3、活动要求：交易手数满足，即可兑换奖品</p>
         <p>4、注意事项：一人一户，不可重复计算</p>
@@ -181,18 +175,6 @@
     
   </div>
 
-
-  <div id="fixed">
-    <div class="con">
-      <input type="hidden" name="Cname" class="name" value="2017双11">
-      <input type="text" name="Mobile" class="tel" value="电话">
-      <input type="button" value='获取验证码' class="getVerify" />
-      <input type="text" name='moblie_verify' value='验证码' class="verify" />
-      <input type="hidden" name="type" value="2017双11" class="type">
-      <p class="hint">&nbsp;</p>
-    </div>
-    <img src="./images/submit.png" class="sub" alt="">
-  </div>
   <div id="phone">
 
   </div>

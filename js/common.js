@@ -9,7 +9,7 @@ $(function(){
   
 
   $("#pandect .title").css({'padding-top':win_h*80/1024,'padding-bottom':win_h*50/1024,'height':win_h*100/1024});
-  $("#tables .table_title").css({'padding-bottom':win_h*50/1024,'height':win_h*111/1024});
+  $("#tables .table_title").css({'padding-bottom':win_h*10/1024,'height':win_h*111/1024});
   var unit_h = win_h - $("#pandect .title").outerHeight(true) - $("#pandect .option").outerHeight(true);// 轮播高度
   console.log(unit_h);
   var unit_w = unit_h*910/510; //轮播宽度
@@ -32,7 +32,7 @@ $(function(){
     pand_num = (pand_num >= max_pand_num - 1) ? 0 : (pand_num+1);
     $('#pandect .roll ul').animate({'left':pand_num*(0-unit_w)},400,'swing');
     $('#pandect .option .unit').css({'opacity':0.4}).eq(pand_num).css({'opacity':1});
-  },5000);
+  },3000);
 
   $('#pandect .option .unit').on('click',function(){
     var index = $('#pandect .option .unit').index(this);
@@ -92,10 +92,21 @@ $(function(){
   
   
 
+  
 
 
-
-
+  $('.jump').on('click',function(){
+    var str = window.location.href;
+    var strFirst = str.indexOf('#');
+    if(strFirst == -1){
+      window.location.href = str + '#page6';
+    }else{
+      str = str.substring(0,strFirst);
+      console.log('first: ' + strFirst);
+      console.log('str: ' + str);
+      window.location.href = str + '#page6';
+    }
+  });
 
 
 
